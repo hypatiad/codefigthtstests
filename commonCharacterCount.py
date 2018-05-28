@@ -18,7 +18,7 @@ def commonCharacterCount(s1, s2):
     indmax=max(l1,l2)
     for i in range(indmin):
         w1=s1[i]
-        counter1=Counter(s1)
+        counter1=Counter(s1)#how many times character occured in a string
         counter2=Counter(s2)            
         if  w1 in s2 and counter1[w1]<=counter2[w1]:
             cnt=cnt+1  
